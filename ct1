@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int secs;
+    scanf("%d",&secs);
+    int  mins=secs/60;
+        secs=secs%60;
+    int hour=mins/60;
+    mins=mins%60;
+    int days=hour/24;
+    hour=hour%24;
+    printf("The Duration is %d days %d hours %d minutes %d seconds",days,hour,mins,secs);
+    return 0;
+}
